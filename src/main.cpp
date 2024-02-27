@@ -42,9 +42,9 @@ void call_dgemm()
 
 
   // For storing the result
-  double * C = new double[9];
+  double * C = new double[matsize*matsize];
   // Fill in to avoid weird memory initialization things
-  std::fill_n(C,9,0.0);
+  std::fill_n(C,matsize*matsize,0.0);
 
   // Flags for transposition
   char N = 'N';
